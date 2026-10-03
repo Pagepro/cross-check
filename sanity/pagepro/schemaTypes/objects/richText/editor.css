@@ -1,0 +1,302 @@
+/*
+ * Editor-only preview styling for rich text block styles.
+ *
+ * `RawTextRenderer` (styles.tsx) wraps each block style in `<div class="{styleKey}">`.
+ * The frontend maps those keys to Tailwind utility strings in
+ * `web/src/ui/RichText/block-styles.ts` — those classes do NOT exist as CSS, so
+ * without this file the Studio editor shows every block style as flat text.
+ *
+ * This mirrors the frontend type scale at its DESKTOP (`lg`) size — the Pagepro
+ * texts.ts type matrix (Task 8): Galderglynn 900 for headings/section headings,
+ * Work Sans for body copy. It is an approximation — responsive `base`/`md`
+ * breakpoints are not previewable here, only the `lg` size each key resolves
+ * to. Studio's own base font (below) is Work Sans, matching the frontend body
+ * font. Keep in sync with block-styles.ts when the scale changes.
+ *
+ * Imported once in studio/src/sanity/config.ts → applies in both the standalone
+ * studio (Vite) and the embedded studio at /admin (Next.js / Turbopack).
+ */
+
+/* Galderglynn is licensed and is not redistributed with this repository. The rules below
+ * name it first and fall back to the system sans, so the Studio editor renders without it. */
+
+@font-face {
+  font-family: "Work Sans";
+  font-weight: 300;
+  src: url("./fonts/worksans-light.woff2") format("woff2");
+  font-display: swap;
+}
+@font-face {
+  font-family: "Work Sans";
+  font-weight: 400;
+  src: url("./fonts/worksans-regular.woff2") format("woff2");
+  font-display: swap;
+}
+@font-face {
+  font-family: "Work Sans";
+  font-weight: 500;
+  src: url("./fonts/worksans-medium.woff2") format("woff2");
+  font-display: swap;
+}
+@font-face {
+  font-family: "Work Sans";
+  font-weight: 600;
+  src: url("./fonts/worksans-semibold.woff2") format("woff2");
+  font-display: swap;
+}
+
+/* Base rule — ordinary paragraphs (no block-style class, e.g. Sanity's default
+ * "normal" style) still use the body font. `RawTextRenderer` only wraps
+ * *custom* block styles in `<div class="{styleKey}">`; there is no wrapper for
+ * plain text, so we target the Portable Text editor's stable root instead.
+ * `[data-testid="pt-editor"]` is set on the editor's root element in the
+ * installed `sanity` package (`node_modules/sanity/lib/index.js`, the
+ * `Root$j` component) — confirmed present in this repo's installed version. */
+[data-testid="pt-editor"] {
+  font-family: "Work Sans", ui-sans-serif, sans-serif;
+  font-weight: 400;
+}
+
+/* Headings + section headings — Galderglynn 900, tracking normal (the source
+ * type matrix defines no letter-spacing overrides for any style).
+ * `heading-1..4` alias `section-heading-xl/lg/md/sm` one-for-one, and
+ * `alt-heading-N` now mirrors `heading-N` (VP-R3: the source `headingN` look;
+ * `alt-heading-6` is heading5's recorded fallback). The VP-R3 source-look
+ * styles (`h2-*`, `p-*`) join the group of the size they reproduce. */
+.heading-1,
+.alt-heading-1,
+.section-heading-xl,
+.p-heading-1 {
+  font-family: "Galderglynn", ui-sans-serif, sans-serif;
+  font-size: 5.75rem; /* text-92 */
+  font-weight: 900;
+  line-height: 1.1; /* leading-heading */
+}
+
+.heading-2,
+.alt-heading-2,
+.section-heading-lg,
+.p-heading-2 {
+  font-family: "Galderglynn", ui-sans-serif, sans-serif;
+  font-size: 4rem; /* text-64 */
+  font-weight: 900;
+  line-height: 1.1; /* leading-heading */
+}
+
+.heading-3,
+.alt-heading-3,
+.section-heading-md,
+.h2-heading-3,
+.p-heading-3 {
+  font-family: "Galderglynn", ui-sans-serif, sans-serif;
+  font-size: 2.25rem; /* text-36 */
+  font-weight: 900;
+  line-height: 1.3; /* leading-heading-md */
+}
+
+.heading-4,
+.alt-heading-4,
+.section-heading-sm,
+.p-heading-4 {
+  font-family: "Galderglynn", ui-sans-serif, sans-serif;
+  font-size: 1.375rem; /* text-22 */
+  font-weight: 900;
+  line-height: 1.1; /* leading-heading */
+}
+
+/* No source heading6 — heading-6 / alt-heading-6 are recorded fallbacks onto
+ * heading-5's metrics (same size/weight/leading). */
+.heading-5,
+.heading-6,
+.alt-heading-5,
+.alt-heading-6,
+.h3-heading-5,
+.h4-heading-5,
+.p-heading-5 {
+  font-family: "Galderglynn", ui-sans-serif, sans-serif;
+  font-size: 1rem; /* text-16 */
+  font-weight: 900;
+  line-height: 1.3; /* leading-heading-md */
+}
+
+/* VP-R3 — the source's label looks (`texts.ts:46-57`). */
+.h2-subheading-1,
+.p-subheading-1 {
+  font-family: "Galderglynn", ui-sans-serif, sans-serif;
+  font-size: 1.5rem; /* text-24 */
+  font-weight: 900;
+  line-height: 1.5; /* leading-normal */
+}
+
+.h2-subheading-2,
+.h3-subheading-2,
+.h4-subheading-2,
+.p-subheading-2 {
+  font-family: "Galderglynn", ui-sans-serif, sans-serif;
+  font-size: 1rem; /* text-16 */
+  font-weight: 400;
+  line-height: 1.1; /* leading-heading */
+}
+
+/* NX-8 — the source `body9` look (`texts.ts:97-100`): the `lg` step, 22px on a
+ * 1.3 leading; no weight of its own. */
+.p-body-9 {
+  font-family: "Work Sans", ui-sans-serif, sans-serif;
+  font-size: 1.375rem; /* text-22 */
+  line-height: 1.3; /* lg:leading-heading-md */
+}
+
+/* Body — Work Sans, tracking normal. Sizes/weights/line-heights are the `lg`
+ * step of each key's base/md/lg ladder. `alt-body-*` keep their existing
+ * alias targets (alt-body-6 → body-5's metrics, per the renderer). Note:
+ * `body-6`/`body-7` are component-only (see block-styles.ts) — not
+ * Studio-selectable, so they have no rule here. */
+.body-1,
+.alt-body-1 {
+  font-family: "Work Sans", ui-sans-serif, sans-serif;
+  font-size: 1rem; /* text-16 */
+  font-weight: 400;
+  line-height: 1.75; /* leading-body */
+}
+
+.body-2,
+.alt-body-2 {
+  font-family: "Work Sans", ui-sans-serif, sans-serif;
+  font-size: 1.375rem; /* text-22 */
+  font-weight: 600;
+  line-height: 1.5; /* leading-normal */
+}
+
+.body-3,
+.alt-body-3 {
+  font-family: "Work Sans", ui-sans-serif, sans-serif;
+  font-size: 1.375rem; /* text-22 */
+  font-weight: 400;
+  line-height: 1.5; /* leading-normal */
+}
+
+.body-4,
+.alt-body-4 {
+  font-family: "Work Sans", ui-sans-serif, sans-serif;
+  font-size: 0.875rem; /* text-14 */
+  font-weight: 400;
+  line-height: 1.1; /* leading-heading */
+}
+
+.body-5,
+.alt-body-5,
+.alt-body-6 {
+  font-family: "Work Sans", ui-sans-serif, sans-serif;
+  font-size: 0.875rem; /* text-14 */
+  font-weight: 500;
+  line-height: 1.5; /* leading-normal */
+}
+
+/* The `decoratedList` block (blocks/decorated-list.ts) needs no rule here: a
+ * custom object block renders in the editor through its schema `preview`
+ * (icon + marker/title row), not through a `{styleKey}` class, so there is
+ * nothing for this stylesheet to mirror. Only block STYLES and decorators
+ * below/above are previewed by class. */
+
+/* `highlight` decorator (ruling P3A-38) — the painted band the source drew for
+ * `underlineType: "blackGradient"` (`atoms/RichText/styles.tsx:47-56`). Rendered
+ * by the `Highlight` decorator component in `components.tsx`; this mirrors the
+ * frontend `.highlight` rule in `web/src/styles/app.css` with the literal ink
+ * colour (the editor has no theme tokens, and the preview is always light). */
+.highlight {
+  /* The site's light `--foreground` (navy #00141F, `web/src/styles/app.css`).
+   * A literal is right here: the Studio has no theme tokens and is light-only,
+   * so there is no dark variant to invert to. */
+  background: linear-gradient(#00141f, #00141f) 0 90% / 100% 0.5em no-repeat;
+  padding-inline: 0.375rem;
+  color: inherit;
+}
+
+/* Accent bold inside headings (ruling P3A-39) — mirrors the
+ * `[&_strong]:text-accent [&_strong]:font-black` pair every heading class
+ * string carries in `web/src/ui/RichText/block-styles.ts`. Source:
+ * `atoms/RichText/styles.tsx:71-77` (`Heading strong, b { color: accent;
+ * font-weight: inherit }`). #f5333f is `--accent` in `web/src/styles/app.css`. */
+.heading-1 strong,
+.heading-2 strong,
+.heading-3 strong,
+.heading-4 strong,
+.heading-5 strong,
+.heading-6 strong,
+.alt-heading-1 strong,
+.alt-heading-2 strong,
+.alt-heading-3 strong,
+.alt-heading-4 strong,
+.alt-heading-5 strong,
+.alt-heading-6 strong,
+.h2-heading-3 strong,
+.h2-subheading-2 strong,
+.h4-heading-5 strong,
+.h2-subheading-1 strong,
+.h3-heading-5 strong,
+.h3-subheading-2 strong,
+.h4-subheading-2 strong,
+.section-heading-xl strong,
+.section-heading-lg strong,
+.section-heading-md strong,
+.section-heading-sm strong {
+  color: #f5333f;
+  font-weight: inherit;
+}
+
+/* Task 1 fix round 1 (M3) — mirrors of the group D frontend looks. */
+
+/* D-11 — an underlined word inside a heading is the accent band, not a
+ * text-decoration: the `:where(h1, h2, h3, h4, h5, h6) u` rule in
+ * `web/src/styles/app.css` (source
+ * `/Users/martin/1_PROJECTS/pagepro-career-portal/apps/site/src/components/atoms/RichText/styles.tsx:77-82`).
+ * The frontend matches heading ELEMENTS, so the `p-*` looks (rendered `<p>`) are
+ * not listed. `<u>` comes from the `Underline` decorator component. */
+.heading-1 u,
+.heading-2 u,
+.heading-3 u,
+.heading-4 u,
+.heading-5 u,
+.heading-6 u,
+.alt-heading-1 u,
+.alt-heading-2 u,
+.alt-heading-3 u,
+.alt-heading-4 u,
+.alt-heading-5 u,
+.alt-heading-6 u,
+.h2-heading-3 u,
+.h2-subheading-2 u,
+.h4-heading-5 u,
+.h2-subheading-1 u,
+.h3-heading-5 u,
+.h3-subheading-2 u,
+.h4-subheading-2 u,
+.section-heading-xl u,
+.section-heading-lg u,
+.section-heading-md u,
+.section-heading-sm u {
+  text-decoration: none;
+  background: linear-gradient(#f5333f, #f5333f) 0 90% / 100% 0.5em no-repeat;
+  padding: 0 0.375rem;
+}
+
+/* D-21 — bold inside a look paragraph keeps the look's weight (the
+ * `[&_strong]:font-black` / `[&_strong]:font-normal` on `SOURCE_LOOK_STYLES` in
+ * `web/src/ui/RichText/block-styles.ts`). */
+.p-heading-1 strong,
+.p-heading-2 strong,
+.p-heading-3 strong,
+.p-heading-4 strong,
+.p-heading-5 strong,
+.p-subheading-1 strong,
+.p-subheading-2 strong {
+  font-weight: inherit;
+}
+
+/* Port map row 5 — the source link's 1px bottom rule, 1px under the text
+ * (`LINK_CLASS` in `web/src/ui/RichText/RichTextLink.tsx`); the site's light
+ * `--foreground` navy as a literal (light-only editor). */
+.rich-text-link {
+  border-bottom: 1px solid #00141f;
+  padding-bottom: 1px;
+}

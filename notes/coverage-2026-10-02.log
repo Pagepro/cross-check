@@ -1,0 +1,87 @@
+# 8 of the 87 rows are withheld: their wording quotes or presupposes a commercial detail
+# about us that is not public. The totals below are over all 87.
+# 2 partly (corpus: covered) · Are we talking $5k, $50k, or $500k+ territory?
+# 4 partly (corpus: contradiction) · Do you work fixed price or time and materials?
+# 3 partly (corpus: contradiction) · Can you give us fixed-cost pricing per task or milestone instead of a range?
+# 1 partly (corpus: weak) · How much does it cost to migrate a WordPress site to Next.js?
+# 8 no     (corpus: gap) · Any additional discount for committing to the full migration?
+# 9 no     (corpus: covered) · We vibe-coded an app. What does it cost to take it to production?
+# 6 partly (corpus: covered) · What information do you need from us to be able to provide a fixed cost?
+# 5 partly (corpus: weak) · We have 15k euro available for this phase. What can you do for that?
+#12 partly (corpus: covered) · Are you able to start right away if we move forward?
+#13 yes    (corpus: covered) · Can you begin within 10 business days of signature?
+#14 partly (corpus: weak) · Could you build this in 4 weeks?
+#16 partly (corpus: weak) · If something comes up, can someone jump in within 24 hours?
+#18 no     (corpus: covered) · How long does store review take, and is that included in your timeline?
+#19 partly (corpus: covered) · Who exactly will work on this, with role, seniority and allocation?
+#20 partly (corpus: covered) · Can you confirm who will be our project manager and QA tester?
+#17 partly (corpus: gap) · Can you deliver an audit within 48 to 72 hours?
+#15 partly (corpus: covered) · What do you need from us to get this started?
+#22 no     (corpus: gap) · What is the attrition rate of the team we would be working with? Average tenure?
+#23 yes    (corpus: covered) · Can we have a single named developer rather than a pool?
+#21 partly (corpus: covered) · Are your people employed or freelance, on site or remote?
+#27 partly (corpus: gap) · How do you handle transition with our in-house team: pairing, shadowing, knowledge transfer?
+#24 partly (corpus: weak) · Who does your design work?
+#29 no     (corpus: covered) · Can we speak with two current clients, at least one of 12 months or more?
+#30 no     (corpus: covered) · Can you share a redacted example of a monthly client report?
+#28 partly (corpus: covered) · Can you share 3 to 5 relevant references at our business size and complexity?
+#31 partly (corpus: covered) · What does your initial audit produce? Can we see a redacted example?
+#32 partly (corpus: weak) · Show us projects you have pulled out of a hole like ours.
+#33 no     (corpus: gap) · Have you shipped SSR on edge workers in production? If yes, what bit you?
+# An AI Gateway credit outage failed 51 questions mid-run. All were re-run successfully
+# except #58, which has no row below.
+33 checked · yes 2 · partly 19 · no 12
+of the 10 the corpus marked as gaps: no 8, partly 2, yes 0
+#34 no     (corpus: gap) · What is the most technically ambitious idea you have brought to a client unprompted?
+#36 partly (corpus: covered) · Can you confirm IP, repo and cloud accounts are ours throughout and at exit?
+#37 no     (corpus: covered) · Is that explicit in your standard agreement template?
+#38 no     (corpus: covered) · Can we add our jurisdiction to the NDA?
+#39 no     (corpus: covered) · Can you send legal entity details for our procurement system?
+#40 no     (corpus: covered) · Do you charge VAT?
+#42 partly (corpus: weak) · How does a typical month work: how is work requested, prioritised, tracked?
+#43 yes    (corpus: gap) · What happens to unused hours at month end?
+#44 no     (corpus: covered) · Do meetings count against our retainer hours?
+#41 partly (corpus: gap) · Walk us through your last takeover. What do weeks 1, 4 and 12 look like?
+#46 partly (corpus: gap) · Describe how you approach a CMS migration technically.
+#47 no     (corpus: gap) · Do you have a template or question list for gathering requirements?
+#45 partly (corpus: gap) · How would your team and I work on the app at the same time?
+#50 partly (corpus: covered) · Can the CMS be hosted in the US?
+#49 partly (corpus: covered) · What are the next steps and what does onboarding look like?
+#48 partly (corpus: contradiction) · What does your audit cost and is it free?
+#52 no     (corpus: gap) · Can you confirm the CMS stores no form submissions or personal data?
+#51 no     (corpus: weak) · What are the implications of using a US-based CMS, with cost and timeline impact?
+#54 yes    (corpus: weak) · How do you handle framework version upgrades and CVEs, proactive or reactive?
+#53 no     (corpus: covered) · Will any of our production data leave the UK?
+#56 no     (corpus: covered) · Will you complete our security questionnaire, and how fast?
+#55 partly (corpus: weak) · What observability tooling do you use and who monitors the dashboards?
+#59 partly (corpus: contradiction) · What is your standard SLA: response versus resolution, severity tiers, out-of-hours cover?
+#61 yes    (corpus: gap) · Does the monthly SLA fee include development hours?
+#60 partly (corpus: contradiction) · What does post-launch support cost per month?
+#62 yes    (corpus: gap) · Is the SLA fee one-time, or does it cover availability for a period?
+#63 no     (corpus: covered) · What are the terms if we need you during public holidays or an event period?
+#57 partly (corpus: gap) · Can you tell us how to do the implementation rather than doing it, if we cannot grant access?
+#66 partly (corpus: contradiction) · Do you have a rate card you can share?
+#64 yes    (corpus: gap) · If our engineer were unavailable for months, could you independently keep the site running?
+#67 partly (corpus: contradiction) · What is your hourly rate for a senior full-stack developer?
+#68 no     (corpus: contradiction) · What are your PM and QA rates?
+#65 no     (corpus: gap) · What should we budget for monthly maintenance and hosting at 12,000 visits a month?
+#72 no     (corpus: covered) · Do you offer white-label or partner rates?
+#71 no     (corpus: covered) · What is the effective day rate for a 1 to 1.5 day per month commitment?
+#70 partly (corpus: gap) · What is your minimum engagement size?
+#74 no     (corpus: gap) · Has an engagement ever terminated early, and how did that work?
+#73 yes    (corpus: covered) · What happens contractually if the codebase is more complex than expected?
+#77 yes    (corpus: weak) · Will your solution lock us in?
+#75 partly (corpus: weak) · What does a clean handback look like if we take it back in house? Has a client done this?
+#76 no     (corpus: covered) · What is the notice period and are there lock-ins?
+#78 no     (corpus: covered) · What AI tooling do your engineers use day to day?
+#79 no     (corpus: covered) · Can we approve the AI tools you use on our codebase?
+#83 yes    (corpus: gap) · Will migrating to Next.js hurt our SEO?
+#80 no     (corpus: gap) · How do you avoid prototypes becoming ongoing maintenance obligations?
+#82 partly (corpus: gap) · What is your cache strategy for sub-100ms edge TTFB with sub-minute editor updates?
+#84 partly (corpus: covered) · Are you all-in on Next.js, or is it only part of your stack?
+#86 no     (corpus: covered) · Can we move from 14 to 30 day payment terms?
+#85 no     (corpus: contradiction) · What are your payment terms?
+#87 no     (corpus: covered) · What forms of payment do you accept?
+this run: 53 checked
+all checked so far: 87 of 87 · yes 10 · partly 38 · no 39
+of the 29 the corpus marked as gaps: no 16, partly 8, yes 5

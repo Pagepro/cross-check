@@ -1,0 +1,51 @@
+run 20261002-0954: 48 of 48 eligible questions (39 gaps excluded), anthropic/claude-sonnet-5
+# 1 row is withheld: its wording presupposes a commercial detail about us that is not
+# public. The run header above counts it.
+# 3 not-communicated  alone:correct  search:evasive  18s · Can you give us fixed-cost pricing per task or milestone instead of a range?
+# 1 not-communicated  alone:wrong    search:evasive  19s · How much does it cost to migrate a WordPress site to Next.js?
+# 2 search-misled     alone:correct  search:wrong    22s · Are we talking $5k, $50k, or $500k+ territory?
+# 4 search-misled     alone:correct  search:wrong    32s · Do you work fixed price or time and materials?
+# 6 stale-priors      alone:evasive  search:correct  33s · What information do you need from us to be able to provide a fixed cost?
+# 5 search-misled     alone:correct  search:wrong    54s · We have 15k euro available for this phase. What can you do for that?
+#13 not-communicated  alone:correct  search:evasive  19s · Can you begin within 10 business days of signature?
+#12 not-communicated  alone:correct  search:evasive  27s · Are you able to start right away if we move forward?
+#14 search-misled     alone:correct  search:wrong    23s · Could you build this in 4 weeks?
+#15 not-communicated  alone:wrong    search:wrong    39s · What do you need from us to get this started?
+#16 not-communicated  alone:correct  search:evasive  52s · If something comes up, can someone jump in within 24 hours?
+#19 not-communicated  alone:wrong    search:evasive  28s · Who exactly will work on this, with role, seniority and allocation?
+#20 not-communicated  alone:correct  search:evasive  16s · Can you confirm who will be our project manager and QA tester?
+#17 not-communicated  alone:wrong    search:evasive  54s · Can you deliver an audit within 48 to 72 hours?
+#21 not-communicated  alone:wrong    search:wrong    42s · Are your people employed or freelance, on site or remote?
+#24 stale-priors      alone:wrong    search:correct  37s · Who does your design work?
+#23 search-misled     alone:correct  search:wrong    49s · Can we have a single named developer rather than a pool?
+#27 stale-priors      alone:wrong    search:correct  24s · How do you handle transition with our in-house team: pairing, shadowing, knowledge transfer?
+#28 not-communicated  alone:evasive  search:evasive  42s · Can you share 3 to 5 relevant references at our business size and complexity?
+#32 not-communicated  alone:evasive  search:wrong    39s · Show us projects you have pulled out of a hole like ours.
+#36 stale-priors      alone:wrong    search:correct  26s · Can you confirm IP, repo and cloud accounts are ours throughout and at exit?
+#31 not-communicated  alone:wrong    search:wrong    92s · What does your initial audit produce? Can we see a redacted example?
+#43 search-misled     alone:correct  search:wrong    13s · What happens to unused hours at month end?
+#42 not-communicated  alone:wrong    search:evasive  26s · How does a typical month work: how is work requested, prioritised, tracked?
+#46 aligned           alone:correct  search:correct  19s · Describe how you approach a CMS migration technically.
+#45 not-communicated  alone:wrong    search:wrong    40s · How would your team and I work on the app at the same time?
+#41 not-communicated  alone:wrong    search:wrong    87s · Walk us through your last takeover. What do weeks 1, 4 and 12 look like?
+#48 world-guesses     alone:correct  search:wrong    kb-conflicted 30s · What does your audit cost and is it free?
+#50 skipped: the Knowledge Base has no answer, so this is a gap (Content audit), not drift · Can the CMS be hosted in the US?
+#49 stale-priors      alone:wrong    search:correct  29s · What are the next steps and what does onboarding look like?
+#55 not-communicated  alone:wrong    search:evasive  39s · What observability tooling do you use and who monitors the dashboards?
+#57 skipped: the Knowledge Base has no answer, so this is a gap (Content audit), not drift · Can you tell us how to do the implementation rather than doing it, if we cannot grant access?
+#59 world-guesses     alone:evasive  search:evasive  kb-conflicted 22s · What is your standard SLA: response versus resolution, severity tiers, out-of-hours cover?
+#61 not-communicated  alone:wrong    search:wrong    43s · Does the monthly SLA fee include development hours?
+#54 not-communicated  alone:correct  search:evasive  145s · How do you handle framework version upgrades and CVEs, proactive or reactive?
+#62 aligned           alone:correct  search:correct  27s · Is the SLA fee one-time, or does it cover availability for a period?
+#60 not-communicated  alone:evasive  search:evasive  94s · What does post-launch support cost per month?
+#66 not-communicated  alone:correct  search:evasive  16s · Do you have a rate card you can share?
+#67 not-communicated  alone:evasive  search:evasive  16s · What is your hourly rate for a senior full-stack developer?
+#64 aligned           alone:correct  search:correct  25s · If our engineer were unavailable for months, could you independently keep the site running?
+#70 skipped: the Knowledge Base has no answer, so this is a gap (Content audit), not drift · What is your minimum engagement size?
+#73 not-communicated  alone:wrong    search:wrong    16s · What happens contractually if the codebase is more complex than expected?
+#77 aligned           alone:correct  search:correct  15s · Will your solution lock us in?
+#75 stale-priors      alone:wrong    search:correct  37s · What does a clean handback look like if we take it back in house? Has a client done this?
+#82 skipped: the Knowledge Base has no answer, so this is a gap (Content audit), not drift · What is your cache strategy for sub-100ms edge TTFB with sub-minute editor updates?
+#83 aligned           alone:correct  search:correct  23s · Will migrating to Next.js hurt our SEO?
+#84 aligned           alone:correct  search:correct  17s · Are you all-in on Next.js, or is it only part of your stack?
+done · not-communicated 24 · search-misled 6 · stale-priors 6 · aligned 6 · world-guesses 2 · 4 skipped as gaps

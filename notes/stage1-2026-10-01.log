@@ -1,0 +1,60 @@
+
+> contradiction-desk@0.1.0 stage1
+> tsx --conditions=react-server --env-file=.env.local scripts/stage1/ask-kb.mts
+
+
+=== [on the site] How long does it take to see a demo of our site rebuilt with Nexity?
+KB agent (found: true, searches: Nexity demo rebuilt site | Nexity migration framework timeline | how fast can you show a prototype demo):
+Within 48 hours. Using Pagepro's proprietary Nexity framework, you get a 48-hour live demo built with your actual content (not a template) — a working section of your site rebuilt from staging to show exactly what you're getting, before any commitment. This demo is delivered as part of Week 1 of the 4-week Nexity migration engagement, alongside the full content & URL audit, SEO risk assessment, and scope & price confirmation.
+  ↳ SEO-Safe Website Migration Services — 30% faster | Pagepro — https://pagepro.co/services/website-migration-services
+  ↳ Nexity by Pagepro - a system for migrating tech stacks to Next.js + Sanity on Vercel — https://pagepro.co/services/nexity
+  ↳ Custom CMS Development Company | Pagepro — https://pagepro.co/services/custom-cms-development
+Without KB:
+I don't have specific information about "Nexity" in relation to Pagepro's services or process, so I can't give you an accurate timeline for that particular offering.
+
+If Nexity refers to a specific product, framework, or service Pagepro offers, I'd recommend reaching out to the Pagepro team directly—they can walk you through their process for creating preview builds or demos based on your existing site, and give you a realistic timeline based on your project's complexity.
+
+Generally speaking, agencies like Pagepro that work with Next.js and Sanity often can put together an initial demo or prototype within 1-2 weeks, but this varies significantly based on:
+
+- The scope of what's being rebuilt
+- How much content/design needs to be migrated
+- Whether it's a simple visual demo or a functional prototype with CMS integration
+
+Would you like me to help you draft a question to send to Pagepro to get a precise answer? Or if you can share more context about what Nexity refers to, I can try to be more helpful.
+
+=== [not on the site] Do you hold ISO 27001 certification?
+KB agent (found: false, searches: ISO 27001 certification | security compliance certification | GDPR data security NDA contract | certified ISO SOC2 compliance standard):
+The knowledge base does not mention ISO 27001 certification anywhere. It does describe security-related practices — for example, CVE/dependency scanning, patching SLAs, and for the top-tier "Custom" SLA plan a "dedicated security contact; bespoke controls (pen-test, compliance)" for "Enterprise / multi-app estates with elevated security or governance" — but no specific ISO 27001 (or any other named security/compliance certification such as SOC 2) is stated as held by Pagepro.
+  ↳ no citations
+Without KB:
+I don't have verified, current information confirming whether Pagepro holds ISO 27001 certification. Rather than guess, I'd recommend reaching out to Pagepro directly—their team can confirm their current certifications, security practices, and provide any relevant compliance documentation you need for your evaluation.
+
+If security and compliance are key decision factors for your project, it's also worth asking them about:
+
+- Specific data protection measures and policies
+- GDPR compliance practices
+- Any other security certifications or frameworks they follow
+- Their approach to handling sensitive client data
+
+You can typically find this information through their official website, by contacting their sales team, or requesting it as part of a formal RFP process if you're evaluating them for a project.
+
+=== [planted fact] Do new clients get a printed project handbook?
+KB agent (found: true, searches: printed project handbook | onboarding new clients process | handbook documentation guide):
+Yes. According to the Company Overview entry, "Every new client receives a printed project handbook bound in green linen."
+  ↳ Meet your new development team | About Pagepro — https://pagepro.co/about
+Without KB:
+I don't have specific information confirming that Pagepro provides a printed project handbook to new clients. Agencies typically vary in their onboarding materials, and many modern software development agencies—especially those working with Next.js and Sanity—tend to favor digital documentation over printed materials, given the nature of web development work.
+
+For an accurate answer, I'd recommend reaching out to Pagepro directly through their website or contact channels. They'd be able to tell you exactly what their onboarding process looks like, whether that includes digital documentation, a client portal, style guides, or any other materials they provide when starting a new project.
+
+If you're evaluating them as a potential partner, it might also be helpful to ask about their general project kickoff process, communication tools, and how they handle documentation throughout the project lifecycle.
+
+=== [compare] How many people work at Pagepro?
+KB agent (found: true, searches: how many people work at Pagepro team size | employees company size developers | team members staff number):
+According to the Pagepro site, Pagepro has 40 team members.
+  ↳ Meet your new development team | About Pagepro — https://pagepro.co/about
+  ↳ Top Development Services for Creative Agencies | Pagepro — https://pagepro.co/for-agencies
+Without KB:
+I don't have reliable, up-to-date information on the exact current headcount at Pagepro. Team sizes at agencies like this can also change over time, so rather than guess, I'd recommend checking their official website (often an "About Us" or "Team" page) or their LinkedIn company profile for the most accurate and current number.
+
+If you're evaluating them for a project, it might also be helpful to ask them directly how many developers would be allocated to your specific project, since that's often more relevant than overall company size.

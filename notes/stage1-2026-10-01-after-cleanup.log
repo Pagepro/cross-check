@@ -1,0 +1,67 @@
+
+> contradiction-desk@0.1.0 stage1
+> tsx --conditions=react-server --env-file=.env.local scripts/stage1/ask-kb.mts
+
+
+=== [on the site] How long does it take to see a demo of our site rebuilt with Nexity?
+KB agent (found: true, searches: Nexity demo rebuilt site | Nexity framework migration timeline | demo site rebuilt days):
+Within 48 hours. Under Pagepro's Nexity framework, Week 1 is "Discovery & Demo": Pagepro audits your current stack, maps content, and rebuilds a working section of your site with your actual data within 48 hours. You review this live demo before committing to scope or price.
+  ↳ SEO-Safe Website Migration Services — 30% faster | Pagepro — https://pagepro.co/services/website-migration-services
+  ↳ Nexity by Pagepro - a system for migrating tech stacks to Next.js + Sanity on Vercel — https://pagepro.co/services/nexity
+Without KB:
+I don't have specific information about "Nexity" in relation to Pagepro's services, so I can't give you an accurate timeline for that particular demo.
+
+If you're asking about getting a **demo/prototype of your site rebuilt with Next.js and Sanity** (which is Pagepro's core specialty), here's what's typically involved:
+
+- **Initial consultation & scoping** – usually a quick call to understand your current site and goals
+- **Demo/prototype timeline** – this varies based on complexity, but agencies like Pagepro often provide a working preview or key-page rebuild within **1–3 weeks**, depending on the scope
+
+For an accurate answer specific to your project and timeline, I'd recommend reaching out directly to Pagepro's team—they can assess your current site and give you a concrete estimate based on your specific requirements.
+
+Could you clarify what "Nexity" refers to? If it's a typo for "Next.js" or a specific tool/platform, I can help refine the answer.
+
+=== [not on the site] Do you hold ISO 27001 certification?
+KB agent (found: true, searches: ISO 27001 certification | security compliance certification SOC 2 GDPR | NDA contract security data protection):
+The knowledge base explicitly addresses this: it states that compliance certifications such as ISO 27001 (as well as SOC 2 or GDPR posture) are NOT stated anywhere in the source material. The 'Security, Compliance & Contracts' entry notes: "The source does not state compliance certifications (e.g., SOC 2, ISO 27001, GDPR posture), NDA terms, IP ownership provisions, or data handling policies. If these are required before engagement, they should be raised directly with Pagepro (see contact: chris@pagepro.co)." So based on this knowledge base, Pagepro does not state that it holds ISO 27001 certification — this isn't confirmed one way or the other, and you'd need to contact Pagepro directly (chris@pagepro.co) to get a definitive answer.
+  ↳ Next.js App Rescue | Fix Production Issues Fast — https://pagepro.co/services/nextjs-project-rescue
+Without KB:
+I don't have verified information confirming whether Pagepro holds ISO 27001 certification. Security certifications and compliance details can change over time, so rather than guess, I'd recommend reaching out to Pagepro directly through their official website or sales contact to get an accurate, up-to-date answer.
+
+If having this certification is a requirement for your project (e.g., due to regulatory or client-security needs), it's worth asking them specifically about:
+
+- Current ISO 27001 status (certified, in progress, or not pursuing)
+- Any alternative security practices or compliance frameworks they follow (e.g., SOC 2, GDPR compliance measures)
+- Their data handling, infrastructure security, and development practices in general
+
+Would you like suggestions on what specific security questions to ask them, or help evaluating their fit for your project based on other criteria?
+
+=== [specific fact] Do unused support hours roll over to the next month?
+KB agent (found: true, searches: unused support hours rollover next month | support hours roll over carry forward | SLA monthly retainer support hours expire):
+No. Under Pagepro's Fixed Monthly Bucket of Hours (BoH) support plan, unused hours do not roll over to the next month. (The Next.js & Sanity SLA tiers and the Customised Support model don't mention rollover terms at all.)
+  ↳ Application Maintenance & Support Company| Pagepro — https://pagepro.co/services/post-release-support
+  ↳ Next.js Support & Maintenance Services | Pagepro SLA — https://pagepro.co/services/nextjs-support
+Without KB:
+I don't have specific details about Pagepro's exact support hour policies, as these terms can vary depending on the service package or contract you have with them.
+
+Generally, agencies handle unused support hours in one of a few ways:
+
+- **Roll over** for a limited time (e.g., 1-3 months)
+- **Expire** at the end of each billing cycle (use-it-or-lose-it)
+- **Convert** into credit for other services
+- **Flexible/averaged** over a longer retainer period
+
+Since this directly affects budgeting and value, I'd recommend asking Pagepro directly for their specific policy—ideally get it confirmed in writing as part of your contract or SOW. It's a very reasonable question to ask before signing, and most agencies are happy to clarify this upfront.
+
+Would you like tips on other contract terms worth clarifying with them?
+
+=== [compare] How many people work at Pagepro?
+KB agent (found: true, searches: how many people work at Pagepro team size | employees developers team members | company size headcount founded):
+According to the knowledge base, Pagepro has a team size of 40 members. The company also notes that 85% of its developers are mid-senior level, with an average of 5 years' experience. Pagepro has offices in London (UK) and Białystok (Poland), with development based in Białystok and management in London.
+  ↳ Discovery Phase Service for a Software Project | Define Scope & Strategy — https://pagepro.co/services/technical-discovery-phase
+  ↳ Meet your new development team | About Pagepro — https://pagepro.co/about
+  ↳ IT Staff Augmentation Company | Pagepro — https://pagepro.co/services/team-augmentation
+  ↳ Schedule a meeting with our experts | Contact Pagepro — https://pagepro.co/contact
+  ↳ Meet Chris Lojniewski, CEO at Pagepro — https://pagepro.co/meet-chris
+  ↳ Top Development Services for Creative Agencies | Pagepro — https://pagepro.co/for-agencies
+Without KB:
+I don't have verified, up-to-date information on the exact current headcount at Pagepro. Team sizes at agencies like this can also change over time, so rather than guess, I'd recommend checking their official website (often an "About Us" or "Team" page) or their LinkedIn company page, which usually shows employee count and profiles. You could also ask them directly—agencies are typically happy to share this when discussing a potential project, along with details on which team members would work on your specific needs.

@@ -1,0 +1,52 @@
+{
+  "name": "cross-check",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "eslint",
+    "test": "vitest run",
+    "spike:gateway": "tsx --conditions=react-server --env-file=.env.local scripts/gateway-spike.mts",
+    "check:mcp": "node --env-file=.env.local scripts/check-mcp.mjs",
+    "check:context-api": "node --env-file=.env.local scripts/check-context-api.mjs",
+    "check:kb-issues": "node --env-file=.env.local scripts/check-kb-issues.mjs",
+    "stage1": "tsx --conditions=react-server --env-file=.env.local scripts/stage1/ask-kb.mts",
+    "stage2": "tsx --conditions=react-server --env-file=.env.local scripts/stage2/run-probe.mts",
+    "stage4": "tsx --conditions=react-server --env-file=.env.local scripts/stage4/compare.mts",
+    "stage4:recommend": "tsx --conditions=react-server --env-file=.env.local scripts/stage4/recommend.mts",
+    "coverage": "tsx --conditions=react-server --env-file=.env.local scripts/stage5/coverage.mts"
+  },
+  "dependencies": {
+    "@ai-sdk/anthropic": "^4.0.68",
+    "@ai-sdk/mcp": "2.0.62",
+    "@sanity/client": "8.8.0",
+    "@sanity/code-input": "^7.3.9",
+    "@sanity/table": "^3.1.17",
+    "ai": "7.0.122",
+    "lodash": "^4.18.1",
+    "next": "16.3.6",
+    "next-sanity": "13.3.4",
+    "react": "19.2.8",
+    "react-dom": "19.2.8",
+    "react-icons": "^5.7.0",
+    "sanity": "6.16.0",
+    "server-only": "0.0.1",
+    "styled-components": "6.5.3",
+    "zod": "4.6.5"
+  },
+  "devDependencies": {
+    "@tailwindcss/postcss": "^4",
+    "@types/lodash": "^4.17.25",
+    "@types/node": "22.20.4",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "eslint": "^9",
+    "eslint-config-next": "16.3.6",
+    "tailwindcss": "^4",
+    "tsx": "4.23.15",
+    "typescript": "^5",
+    "vitest": "5.0.2"
+  }
+}
